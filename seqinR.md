@@ -29,7 +29,7 @@ click here to get one)
 To read your fasta sequence, try 
 
 ```R
-myseq=read.fasta(file="C:/Users/DCB/Desktop/seq.fasta", seqtype="DNA")
+myseq=read.fasta(file="insulin.fasta", seqtype="DNA")
 ```
 
 Now try 
@@ -41,3 +41,13 @@ translate(myseq$seq1)
 GC(myseq$seq1) 
 c2s(myseq$seq1)
 ```
+
+
+## BLAST using Annotate Package
+
+```R
+library(annotate)
+MyBlast <- blastSequences("acttcttggg cttagaacaa ctagaacatc tggatttcca gcattccaat ttgaaacaaa")
+```
+
+
