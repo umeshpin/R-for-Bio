@@ -28,3 +28,9 @@ Regression Line
 plot(RA_data4$RA_intensity ~ RA_data4$Pulse_rate, main="RA_intensity ~ Pulse_rate")
 abline(RA_model, col="red")
 ```
+
+Random Forest
+```R
+fit <- randomForest(RA_data4$RA_intensity ~ ., RA_data4,ntree=500)
+varImpPlot(fit, sort = T,main="Variable Importance", n.var=18)
+```
