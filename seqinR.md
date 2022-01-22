@@ -19,6 +19,10 @@ This will create a list with name hemo and having details of human hemoglobin in
 ```R
 seq_hemo<-getSequence(hemo$req[1])
 ```
+Let us write this fasta file.
+```R
+write.fasta(sequences = seq_hemo, names = names(seq_hemo), nbchar = 147, file.out = "NewfileHemo")
+```
 In the similar way you can download data from any sequence database , or even search data using R environment. 
 You can also do manipulations of your sequence by using seqinr. A sequence file from your desktop can be opened in R environment by using simple command (if you don't have a sequence file,
 click here to get one) 
