@@ -1,3 +1,5 @@
 # R for Biologists
 
-https://combine-australia.github.io/RNAseq-R/06-rnaseq-day1.html
+This Tutorial includes Basic Introduction to R programming enviornment and Exersise related to analysis of Biological data.
+
+To do the Exersise create an accound on R Cloud https://rstudio.cloud/
